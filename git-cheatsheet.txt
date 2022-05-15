@@ -1,0 +1,17 @@
+Git Commands to upload Project on GitHub- 
+
+git config --global user.name Anubh1001   //For setting username and email
+git config --global user.email anubhsanoj2020@gmail.com
+
+cd "F:\WebD\Project\Project-1(tut)"     //Go to project folder
+touch .gitignore                        //Put \nodemodules like big files there
+git init
+git add . 
+git commit -m "Initial commit"
+git status
+
+ssh-keygen -t ed25519 -C "anubhsanoj2020@gmail.com"   //Generates SSH Key
+cat /c/Users/Asus/.ssh/id_ed25519.pub    //Extract the key from the path and paste it in Github SSH key
+
+git remote add origin git@github.com:Anubh1001/Gym-Website.git    //Connect to the Github repository 
+git push origin master
